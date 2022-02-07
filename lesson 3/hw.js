@@ -19,10 +19,13 @@ arr[1] = 33;
 arr[2] = 12;
 arr[3] = true;
 arr[4] = `block`;
-for (let temp of arr){
-console.log(temp);
-}*/
+console.log(arr);*/
+// for (let temp of arr){ //не зрозумів, чи масив вивести чи кожний елемент, можно розкоментувати
+// console.log(temp);
+// }
+
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+
 /*let arr = [];
 arr[0] = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, soluta?`;
 arr[1] = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta eligendi molestiae nihil quis sit.`;
@@ -55,19 +58,28 @@ arr[7] = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum natus,
 arr[8] = `Lorem ipsum dolor sit.`;
 arr[9] = `Lorem ipsum.`
 
-document.write(`<div>`)
-for (let temp of arr){
-//for (let fieldName in arr){
-    document.write(`<div class="xxx">${temp} індекс - ${arr.indexOf(temp)}</div>`);
+    for (let i = 0; i < arr.length; i++) {
+        let element = arr[i];
+    document.write(`<div class="xxx">${element} - index - ${[i]}</div>`);
 }
-document.write(`</div>`)*/
+document.write(`</div>`);*/
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 
+/*let i = 0;
+while (i<19){
+    document.write(`<div class="test"><h1>test</h1></div>`);
+    i++;
+}*/
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 //
 
+/*let i = 0;
+while (i<19){
+    document.write(`<div class="test"><h1>test - ${i}</h1></div>`);
+    i++;
+}*/
 
 // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
 
@@ -82,6 +94,7 @@ console.log(number);
 for (let letter of letters) {
     console.log(letter);
 }*/
+
 // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 
 /*let all = [10,`ooo`,true,23,`solt`,89,false,`duck`,323,` `];
@@ -106,7 +119,7 @@ for (let i = 0; i < arr.length; i++) {
 /*let arr = [10,`ooo`,true,23,`solt`,89,false,`duck`,323,` `];
 for (let i = 0; i < arr.length; i++) {
     let element = arr[i];
-    if (typeof element === `string`){
+    if (typeof element === `number`){
         console.log(element);
     }
 
@@ -168,11 +181,19 @@ for (let i = 0; i < 99; i+=2) {
 
 /*let array = [];
 for (let i = 0; i < 99; i++) {
-    const arrayElement = array[i];
-    if (i>0 && (i+2)/2){
+    const element = array[i];
+    if (i>0 && i%2 === 0){
+    document.write(`<div>${i}</div>`);
     console.log(i);
     }
-
 }*/
 
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+/*let array = [];
+for (let i = 0; i < 99; i++) {
+    const element = array[i];
+    if (i>0 && i%2 !== 0){
+        document.write(`<div>${i}</div>`);
+        console.log(i);
+    }
+}*/
