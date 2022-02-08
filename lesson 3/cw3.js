@@ -127,6 +127,7 @@ ${simpsonsKey.info}-
 //             -->
 //
 //         </div>
+/*
 let products = [
     {
         title: 'milk',
@@ -157,4 +158,4 @@ for (let product of products){
     document.write(`<img src="${product.image}" alt="img" class="product-image">`)
     document.write(`</div>`)
     document.write(`</div>`)
-}
+}*/
