@@ -109,14 +109,16 @@ document.write(`<div><p>Найменше число - ${xxx}</p></div>`);*/
 
 // - створити функцію яка заповнює масив рандомними числами
 
-// let arrCreator = (counter)=>{
-//     let mas = [];
-//     for (let i = 0; i < counter.length; i++) {
-//         let element = counter[i];
-//         mas =
-//     }
-//     }
-// }
+/*let arrCreator = (counter)=>{
+    let mas = [];
+    for (let i = 0; i < counter; i++) {
+        mas.push(Math.round(Math.random()*100));
+    }
+    return mas;
+    }
+
+    let xxx = arrCreator(10);
+console.log(xxx);*/
 
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
