@@ -109,17 +109,41 @@ document.write(`<div><p>Найменше число - ${xxx}</p></div>`);*/
 
 // - створити функцію яка заповнює масив рандомними числами
 
-/*let arrCreator = (counter)=>{
+/*let arrCreator = ()=>{
     let mas = [];
-    for (let i = 0; i < counter; i++) {
+    for (let i = 0; i < 10; i++) {
         mas.push(Math.round(Math.random()*100));
     }
     return mas;
-    }
+}
 
-    let xxx = arrCreator(10);
+let xxx = arrCreator();
 console.log(xxx);*/
 
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+/*let arrCreator = (length, limit)=>{
+    let mas = [];
+    for (let i = 0; i < length; i++) {
+        mas.push(Math.round(Math.random()*limit));
+    }
+    return mas;
+}
+
+let xxx = arrCreator(10, 97);
+console.log(xxx);*/
+
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+
+/*let reverseArray = (arr)=>{
+    let newArray = [];
+    for (i = arr.length - 1, ri = 0; i>=0;  i--, ri++){
+        newArray[ri] = arr[i];
+    }
+    return newArray;
+}
+
+let xxx = reverseArray([1,2,3]);
+console.log(xxx);*/

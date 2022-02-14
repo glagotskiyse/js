@@ -76,8 +76,7 @@ let xxx = listCreatorCounter('список',3);*/
 //
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-/*
-let objCreator = (arr)=>{
+/*let objCreator = (arr)=>{
     for (let i = 0; i < arr.length; i++) {
         let element = arr[i];
         document.write(`<div>${element.id} ${element.name} ${element.age}</div>`);

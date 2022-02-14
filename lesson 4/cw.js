@@ -75,22 +75,40 @@ console.log(xxx);*/
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
-function middle(arr){
-    let md;
+/*function middle(arr) {
+    let md = 0;
     for (let num of arr) {
-        md = num+md;
+        md = num + md;
     }
-    let result = md/arr.length;
-    console.log(result);
+    let result = md / arr.length;
     return result;
 }
 
 let xxx = middle([23, 45, 66, 11]);
-
-let md = org;
-console.log(org);
+console.log(xxx);*/
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+function minMax(arg) {
+    let min = arguments[0];
+    let max = arguments[0];
+    for (let num of arguments) {
+        if (num > max) {
+            max = num;
+        } if (num < min) {
+            min = num;
+        }
+            }
+    console.log(max);
+    return min;
+}
+
+let xxx = minMax(23,67,11);
+let result = xxx;
+document.write(`<div>${xxx}</div>`);
+
+
+
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
