@@ -81,10 +81,14 @@ document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'*/
 //
 //
 
-let str = 'каждый охотник желает знать';
 
 
+/*function firstUpper(str){
+    return str.charAt(0).toUpperCase()+str.slice(1);
+}
 
+let str = firstUpper('каждый охотник желает знать');
+console.log(str);*/
 
 
 //
