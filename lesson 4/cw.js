@@ -89,7 +89,7 @@ console.log(xxx);*/
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 
-function minMax(arg) {
+/*function minMax(arg) {
     let min = arguments[0];
     let max = arguments[0];
     for (let num of arguments) {
@@ -105,11 +105,47 @@ function minMax(arg) {
 
 let xxx = minMax(23,67,11);
 let result = xxx;
-document.write(`<div>${xxx}</div>`);
+document.write(`<div>${xxx}</div>`);*/
 
 
 
 // - створити функцію яка заповнює масив рандомними числами
+
+/*function arrCreator(length){
+    let newArray = [];
+    for (let i = 0; i < length; i++) {
+        newArray.push(Math.round(Math.random()*100));
+    }
+    return newArray;
+}
+
+let xxx = arrCreator(10);
+console.log(xxx);*/
+
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+/*function arrCreator(length, limit){
+    let mas = [];
+    for (let i = 0; i < length; i++) {
+        mas.push(Math.round(Math.random()*limit));
+    }
+    return mas;
+}
+
+let xxx = arrCreator(10, 97);
+console.log(xxx);*/
+
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+/*
+function reverseArray(arr){
+    let newArray = [];
+    for (i = arr.length - 1, ri = 0; i>=0;  i--, ri++){
+        newArray[ri] = arr[i];
+    }
+    return newArray;
+}
+
+let xxx = reverseArray([1,2,3]);
+console.log(xxx);*/
